@@ -3,30 +3,33 @@ const Chat = require('../models/chat');
 
 //Look into controllers later
 
+
 const router = express.Router();
 
+//Displays all chats
 router.get('/', (req, res) => {
     Chat.find().sort({createdAt: -1})
         .then((result) => {
-            res.render('index', {title: 'All Chats', chats: result})
+            res.render('chats', {title: 'All Chats', chats: result})
         })
         .catch((err) => {
             console.log(err);
         })
 })
 
+//Posts a new chat and then redirects to /chats
 router.post('/', (req,res) => {
     const chat = new Chat(req.body)
     chat.save()
         .then((result) => {
-            res.redirect('/');
+            res.redirect('/chats');
         })
         .catch((err) => {
             console.log(error)
         })
 })
 
-//redirect
+//redirects to create a new chat
 router.get('/create', (req, res) =>{
     res.render('create', {title: "Create a New Blog"});
 
@@ -50,7 +53,7 @@ router.delete('/:id', (req,res) => {
     const id = req.params.id
     Chat.findByIdAndDelete(id)
         .then(result => {
-            res.json({ redirect: '/'})
+            res.json({ redirect: '/chats'})
         })
         .catch(err => {
             console.log(err)
