@@ -1,0 +1,29 @@
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+<body>
+    
+    
+    <%- include('./partials/nav.ejs') %>
+
+    <div class = "Chats content">
+        <h2>All Existing Chatrooms</h2>
+
+        <% if(chats.length > 0) { %>
+            <% chats.forEach(chat => { %>
+                <a class="single" href="/chats/<%= chat._id%>">
+                    <h3 class = 'title'><%= chat.title%></h3>
+                    <p class="body"><%= chat.body%></p>
+                </a>
+            <% }) %>
+        <% } else{%>
+            <h3>No chatrooms to display</h3>
+            <p>Make the first!</p>
+        <% } %>
+            
+
+    </div>
+    <%- include('./partials/footer.ejs') %>
+</body>
+
+
+</html>
