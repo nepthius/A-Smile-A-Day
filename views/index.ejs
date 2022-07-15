@@ -1,4 +1,31 @@
-<h1>Hi <%=name%></h1>
-<form action="/logout?_method=DELETE" method="POST">
-    <button type="submit">Log Out</button>
-</form>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+    <style>
+        button {
+        margin-top: 10px;
+        background: crimson;
+        color: white;
+        padding: 6px;
+        border: 4;
+        font-size: 1.2em;
+        cursor: pointer;
+      }
+    </style>
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+    <div class = "about content"> 
+        <h2>Hi <%=name%>,</h2>
+        <p>Welcome to A Smile a Day, a place to tackle mental health together!</p>
+    </div>
+    <br>
+    <div>
+        <form action="/logout?_method=DELETE" method="POST">
+            <button type="submit">Log Out</button>
+        </form>
+    </div>
+    
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>
