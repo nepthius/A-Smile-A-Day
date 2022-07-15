@@ -20,6 +20,7 @@ initializePassport(
     id => users.find(user => user.id === id)
 )
 
+
 //You need to fix this from a local variable to connecting with a databse
 const users = []
  
@@ -54,7 +55,7 @@ app.use(express.urlencoded({extended:true})) //Accepts form data from register a
 
 //Direct to homepage
 app.get('/', checkAuthenticated, (req, res) => {
-    res.render('index.ejs', {name: req.user.name}) 
+    res.render('index.ejs', {title: 'Homepage', name: req.user.name}) 
 })
 
 //Login routes
@@ -96,6 +97,7 @@ app.post('/register', checkNotAuthenticated, async (req, res) => {
     console.log(users)
 })
 
+//logs user out
 app.delete('/logout', (req, res) => {
     req.logOut(function(err){
         if (err){return next(err)}
@@ -131,5 +133,7 @@ function checkNotAuthenticated(req, res, next){
     }
     next()
 }
+
+
 
 
