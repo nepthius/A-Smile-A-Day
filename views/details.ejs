@@ -1,5 +1,11 @@
 <html lang="en">
 <%- include('./partials/head.ejs') %>
+<style>
+    img{
+        height:50;
+        width:50;
+    }
+</style>
 <body>
     <%- include('./partials/nav.ejs') %>
 
@@ -9,6 +15,8 @@
             <p><%= chat.body %></p>
         </div>
         <a class = "delete" data-doc="<%= chat._id%>">delete</a>
+        <img src="/trashcan.png" alt="Delete Icon">
+        </a>
     </div>
     <%- include('./partials/footer.ejs') %>
 
