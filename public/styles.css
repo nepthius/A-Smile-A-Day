@@ -57,11 +57,11 @@
     .chats a{
       display: block;
       margin: 40px 0;
-      padding-left: 30px;
-      border-left: 6px solid crimson;
+      padding: 20px;
+      border: 6px solid rgb(20, 137, 11);
     }
     .chats a:hover h3{
-      color: crimson;
+      color: rgb(31, 131, 26);
     }
     /* details styles */
     .details{
@@ -76,6 +76,7 @@
     }
     .delete:hover{
       cursor: pointer;
+      background-color: red;
       box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
     }
     /* create styles */
@@ -85,6 +86,7 @@
     }
     .create-chat input,
     .create-chat textarea{
+      background-color: rgb(16, 169, 52);
       display: block;
       width: 100%;
       margin: 10px 0;
@@ -99,10 +101,10 @@
     }
     .create-chat button{
       margin-top: 20px;
-      background: crimson;
+      background: rgb(193, 32, 161);
       color: white;
       padding: 6px;
-      border: 0;
+      border: 4;
       font-size: 1.2em;
       cursor: pointer;
     }
