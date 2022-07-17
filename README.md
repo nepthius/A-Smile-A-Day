@@ -1,3 +1,4 @@
+<img width="1367" alt="Screen Shot 2022-07-17 at 12 01 56 PM" src="https://user-images.githubusercontent.com/98651890/179409088-3af9d5fe-aeef-40bc-8d1c-4cca9b4129d9.png">
 # Mental_health
 A chatroom type website that cultivates community between users facing mental health issues.
 <img width="1309" alt="Screen Shot 2022-07-17 at 9 50 48 AM" src="https://user-images.githubusercontent.com/98651890/179405708-b459b907-3173-49ba-b8ce-c4ff13b16a08.png">
