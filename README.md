@@ -9,3 +9,5 @@ A chatroom type website that cultivates community between users facing mental he
 <img width="1302" alt="Screen Shot 2022-07-17 at 9 53 22 AM" src="https://user-images.githubusercontent.com/98651890/179405759-53fccf37-07c4-44a9-9c6f-b3af6cd13f04.png">
 <img width="1275" alt="Screen Shot 2022-07-17 at 11 37 44 AM" src="https://user-images.githubusercontent.com/98651890/179405771-6ffa8451-9123-44c4-8b73-185a62fcee27.png">
 <img width="1367" alt="Screen Shot 2022-07-17 at 12 01 56 PM" src="https://user-images.githubusercontent.com/98651890/179409088-3af9d5fe-aeef-40bc-8d1c-4cca9b4129d9.png">
+<img width="778" alt="Screen Shot 2022-07-17 at 12 04 44 PM" src="https://user-images.githubusercontent.com/98651890/179409976-39046f57-f5ac-4a29-99f6-e3d624de8a97.png">
+
