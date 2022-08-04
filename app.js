@@ -1,12 +1,8 @@
-if (process.env.NODE_ENV !== 'production'){
-    require('dotenv').config()
-}
 const express = require('express');
 const app = express();
 const dotenv = require("dotenv");
 dotenv.config()
 const mongoose = require('mongoose');
-const { render } = require('ejs');
 const chatRoutes = require('./routes/chatRoutes')
 const bcrypt = require('bcrypt')
 const passport = require('passport')
