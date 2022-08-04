@@ -30,9 +30,6 @@ mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true})
 //register view engine 
 app.set('view engine', 'ejs');
 
-//Takes forms from email and password and allows access to req and psot
-app.use(express.urlencoded({extended: false}))
-
 //setting up flash, session, and method override for later use
 app.use(flash())
 app.use(session({
